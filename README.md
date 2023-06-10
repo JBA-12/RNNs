@@ -16,10 +16,14 @@ Using the inbuilt numpy random functions the dataset of size 7521 is generated a
          i) Start with h<sub>0</sub> = 0<br>
          ii) h<sub>t</sub> = tanh(W<sub>xh</sub>.x<sub>t</sub> + W<sub>hh</sub>.h<sub>t-1</sub> + b<sub>h</sub>)<br>
          iii) y<sub>t</sub> = softmax(W<sub>hy</sub>.h<sub> + b<sub>y</sub><br>
+         
+ <strong>LSTM</strong>: In the forward pass of LSTM we have,<br>
+         i) Start with h<sub>0</sub> = 0<br>
+         ii) f = σ(W<sub>f</sub>.[h<sub>t-1</sub>, x<sub>t</sub> + b<sub>f</sub>])<br>
 
  <strong>GRU</strong>: In the forward pass of GRU we have,<br>
          i) Start with h<sub>0</sub> = 0<br>
-         ii) z = σ(W<sub>z</sub>.[h<sub>t-1</sub>, x<sub>t</sub>]<br>
-         iii) r = σ(W<sub>r</sub>.[h<sub>t-1</sub>, x<sub>t</sub>]<br>
-         iv) H = tanh(W.[r<sub>t</sub> * [h<sub>t-1</sub>, x<sub>t</sub>]<br>
+         ii) z = σ(W<sub>z</sub>.[h<sub>t-1</sub>, x<sub>t</sub>])<br>
+         iii) r = σ(W<sub>r</sub>.[h<sub>t-1</sub>, x<sub>t</sub>])<br>
+         iv) H = tanh(W.[r<sub>t</sub> * [h<sub>t-1</sub>, x<sub>t</sub>])<br>
          v) h = (1-z<sub>t</sub>) * h<sub>t-1</sub> + z<sub>t</sub> * H<br>
