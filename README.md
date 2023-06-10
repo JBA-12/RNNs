@@ -20,10 +20,10 @@ Using the inbuilt numpy random functions the dataset of size 7521 is generated a
  <strong>LSTM</strong>: In the forward pass of LSTM we have,<br>
          i) Start with h<sub>0</sub> = 0<br>
          ii) f = σ(W<sub>f</sub>.[h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>f</sub>)<br>
-         iii) *i* = σ(W<sub>i</sub>.[h<sub>t-1</sub>, x<sub>t</sub> + b<sub>i</sub>])<br>
-         iv) C = tanh(W<sub>C</sub>.[h<sub>t-1</sub>, x<sub>t</sub> + b<sub>C</sub>])<br>
+         iii) *i* = σ(W<sub>i</sub>.[h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>i</sub>)<br>
+         iv) C = tanh(W<sub>C</sub>.[h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>C</sub>)<br>
          v) c = f<sub>t</sub> * C<sub>t-1</sub> + i<sub>t</sub> * C<sub>t</sub> <br>
-         vi) o = σ(W<sub>o</sub>.[h<sub>t-1</sub>, x<sub>t</sub> + b<sub>o</sub>])<br> 
+         vi) o = σ(W<sub>o</sub>.[h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>o</sub>)<br> 
          vii) h = o<sub>t</sub> * tanh(C<sub>t</sub> <br>
 
  <strong>GRU</strong>: In the forward pass of GRU we have,<br>
