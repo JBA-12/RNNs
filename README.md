@@ -34,4 +34,5 @@ Using the inbuilt numpy random functions the dataset of size 7521 is generated a
          v) h = (1-z<sub>t</sub>) * h<sub>t-1</sub> + z<sub>t</sub> * H<br>
          
          
-  A graph between No of Epochs and Loss is plotted and it shows that, Epoch loss order is Elman Network > LSTM > GRU.
+  A graph between No of Epochs and Loss is plotted and it shows that, <br>
+         Epoch loss order is Elman Network > LSTM > GRU.
