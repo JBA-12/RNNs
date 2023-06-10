@@ -10,3 +10,9 @@ n × 2. Below example have lengths of 5 and 8 respectively.
 <img width="682" alt="Screenshot 2023-06-10 213514" src="https://github.com/JBA-12/RNNs/assets/102513876/852ca8d8-7ec7-43fe-abc0-534bf0073f9d">
 
 A dataset (of size ≥ 5000) is first generated and then the RNN models are trained, tested and compared.
+Using the inbuilt numpy random functions the dataset of size 7521 is generated and then the data is split into train data and test data.
+
+Elman Network:<br>
+In the forward pass of Elman we have,<br>
+         i) Start with h_0 = 0
+         ii) h_t = tanh(W_xh.x_t + W_hh.h_t-1 + b_h)
