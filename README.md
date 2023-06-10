@@ -15,4 +15,4 @@ Using the inbuilt numpy random functions the dataset of size 7521 is generated a
 Elman Network:<br>
 In the forward pass of Elman we have,<br>
          i) Start with h_0 = 0
-         ii) h_t = tanh(W_xh.x_t + W_hh.h_t-1 + b_h)
+         ii) h_t = tanh(W<sub>xh</sub>.x_t + W_hh.h_t-1 + b_h)
