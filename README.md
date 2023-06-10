@@ -14,5 +14,6 @@ Using the inbuilt numpy random functions the dataset of size 7521 is generated a
 
 Elman Network:<br>
 In the forward pass of Elman we have,<br>
-         i) Start with h<sub>0</sub> = 0
-         ii) h<sub>t</sub> = tanh(W<sub>xh</sub>.x<sub>t</sub> + W<sub>hh</sub>.h<sub>t-1</sub> + b<sub>h</sub>)
+         i) Start with h<sub>0</sub> = 0<br>
+         ii) h<sub>t</sub> = tanh(W<sub>xh</sub>.x<sub>t</sub> + W<sub>hh</sub>.h<sub>t-1</sub> + b<sub>h</sub>)<br>
+         iii) y<sub>t</sub> = softmax(W<sub>hy</sub>.h<sub> + b<sub>y</sub><br>
